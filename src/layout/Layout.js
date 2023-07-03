@@ -13,15 +13,15 @@ export default function Layout() {
                 <img src={ logoWordmark } alt="logo" />
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Menu</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
                     <li><Link to="/reservation">Reservation</Link></li>
                     <li><Link to="/orderOnline">Order Online</Link></li>
                 </ul>
                 <Link to="/login">Login</Link>
             </nav>
         </header>
-        <main>
+        <main className="homeBody">
             <Outlet />
         </main>
         <footer>
